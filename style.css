@@ -56,8 +56,13 @@ body {
 /* Header Start */
 
 /* Logo settings */
-img.logo {
+/* img.logo {
   max-width: 25%;
+  height: auto;
+} */
+
+img.logo {
+  width: 200px;
   height: auto;
 }
 
@@ -68,6 +73,10 @@ img.logo {
   padding: 10px 80px;
   background: #F5E4DD;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
 
 #navbar {
@@ -105,4 +114,65 @@ img.logo {
   position: absolute;
   bottom: -4px;
   left: 20px;
+}
+
+/* Home Page */
+#hero {
+  background-image: url("img/hero1.PNG");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: top 25% right 0;
+  padding: 0 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#hero h4 {
+  padding-bottom: 20px;
+  font-size: 23px;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+}
+
+#hero h2 {
+  color: #2E7468;
+  padding-top: 5px;
+  font-size: 63px;
+  letter-spacing: 3.25px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  line-height: 1.05;
+}
+
+#hero h1 {
+  color: #1D1B1B;
+  font-size: 70px;
+  letter-spacing: 3.5px;
+}
+
+#hero button {
+  background-image: url("img/button2.PNG");
+  background-color: transparent;
+  color: #1D1B1B;
+  border: 0;
+  padding: 14px 80px 14px 65px;
+  filter: brightness(0.9);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#hero p {
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 1px;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  color: #7D7575;
 }
