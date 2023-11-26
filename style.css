@@ -87,13 +87,12 @@ body {
 
 /* Header Start */
 
-/* Logo settings */
 /* img.logo {
   max-width: 25%;
   height: auto;
 } */
 
-img.logo {
+.logo {
   width: 200px;
   height: auto;
 }
@@ -488,7 +487,7 @@ img.logo {
   background-repeat: no-repeat;
   background-position: 20% 30%;
   background-color: #E59D91;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
 }
 
 #newsletter h4 {
@@ -534,4 +533,78 @@ img.logo {
   white-space: nowrap;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer .pay-logo {
+  width: 180px;
+  height: auto;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+footer h4 {
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: #1D1B1B;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+  margin: 0 0 8px 0;
+  color: #515050;
+}
+
+footer a {
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #5A5A5A;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+}
+
+footer .follow i {
+  color: #515050;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img {
+  border-radius: 5px;
+  border: 1px solid #515050;
+}
+
+footer .install img {
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+  color: #1C7A6A;
+}
+
+footer .copyright {
+  width: 100%;
+  text-align: center;
 }
