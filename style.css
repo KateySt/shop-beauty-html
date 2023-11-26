@@ -118,6 +118,7 @@ img.logo {
 }
 
 /* Home Page */
+
 #hero {
   background-image: url("img/hero1.PNG");
   height: 90vh;
@@ -178,6 +179,7 @@ img.logo {
   color: #7D7575;
 }
 
+/* Feature boxes */
 #feature {
   display: flex;
   align-items: center;
@@ -193,6 +195,7 @@ img.logo {
   border: 1px solid #9E9595;
   border-radius: 5px;
   margin: 15px 0;
+  background-color: #F9F5F4;
 }
 
 #feature .fe-box:hover {
@@ -231,4 +234,100 @@ img.logo {
 
 #feature .fe-box:nth-child(6) h6 {
   background-color: #FBE5AC;
+}
+
+/* Featured products */
+#product1 {
+  text-align: center;
+}
+
+#product1 h2 {
+  padding-bottom: 40px;
+  color: #1D1B1B;
+}
+
+#product1 .pro-container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#product1 .pro {
+  width: 23%;
+  min-width: 250px;
+  height: 440px;
+  padding: 10px 12px;
+  border: 1px solid #9E9595;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+  background-color: #E9E2E2;
+}
+
+#product1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.07);
+}
+
+#product1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#product1 .pro .des {
+  text-align: start;
+  padding: 10px 0;
+}
+
+#product1 .pro .des span {
+  color: #7D7575;
+  font-size: 12px;
+}
+
+#product1 .pro .des .price {
+  position: absolute;
+  bottom: 21px;
+  left: 11px;
+}
+
+#product1 .pro .des .star {
+  position: absolute;
+  bottom: 47px;
+  left: 10px;
+} 
+
+#product1 .pro .des h5 {
+  padding-top: 7px;
+  color: #1D1B1B;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
+
+#product1 .pro .des i {
+  font-size: 12px;
+  color: #f2bf3e;
+}
+
+#product1 .pro .des h4 {
+  padding-top: 7px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1C7A6A;
+}
+
+#product1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  color: #1C7A6A;
+  background-color: #F7F3F1;
+  font-weight: 500;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
 }
