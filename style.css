@@ -199,6 +199,10 @@ body {
   margin-top: 30px;
 }
 
+#hero button:hover {
+  color: #1C7A6A;
+}
+
 #hero p {
   letter-spacing: 2px;
   margin: 0;
@@ -215,6 +219,7 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-bottom: 40px; 
 }
 
 #feature .fe-box {
@@ -374,9 +379,9 @@ body {
   background-size: cover;
   background-position: center;
   color: #4B4A4A;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 600;
-  line-height: 162%
+  line-height: 170%
 }
 
 #banner span {
