@@ -45,6 +45,10 @@ p {
   padding: 40px 80px;
 }
 
+.section-p2 {
+  padding: 40px 140px;
+}
+
 .section-m1 {
   margin: 40px 0;
 }
@@ -195,7 +199,7 @@ body {
 }
 
 #hero button {
-  background-image: url("img/button2.PNG");
+  background-image: url("img/button2.png");
   background-color: transparent;
   color: #1D1B1B;
   border: 0;
@@ -413,7 +417,7 @@ body {
   text-align: center;
   border-radius: 5px;
   background-image: url(img/banner/b2.JPEG);
-  min-width: 620px;
+  min-width: 660px;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -727,7 +731,7 @@ footer .copyright {
 /* Blog Page */
 
 #page-header.blog-header {
-  background-image: url(img/banner/b11.jpg);
+  background-image: url("img/banner/b11.JPG");
 }
 
 #blog {
@@ -801,6 +805,66 @@ footer .copyright {
   font-weight: 700;
   color: #B0B0B0;
   z-index: -9;
+}
+
+/* About Page */
+
+#page-header.about-header {
+  background-image: url("img/banner/b13.JPEG");
+}
+
+#about-head {
+  display: flex;
+  align-items: center;
+}
+
+#about-head img {
+  width: 50%;
+  height: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.13);
+}
+
+#about-head div {
+  padding-left: 40px;
+}
+
+#about-head h2,
+#about-head abbr,
+#about-head marquee {
+  color: #1D1B1B;
+}
+
+#about-head p {
+  color: #5A5A5A;
+}
+
+#about-head p span {
+  color: #1C7A6A;
+  font-weight: 700;
+}
+
+#about-text .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+#about-text .text-center:last-child {
+  padding-bottom: 0;
+}
+
+#about-text .text-center h2 {
+  font-size: 27px;
+  color: #1D1B1B;
+}
+
+#about-text .text-center p {
+  text-align: center;
+}
+
+#about-text .text-center h2 span {
+  color: #F3806E;
 }
 
 /* Start Media Query */
@@ -1067,5 +1131,29 @@ footer .copyright {
 
   #blog .blog-details {
     width: 100%;
+  }
+
+  /* About Page */
+  
+  #about-head {
+    flex-direction: column;
+  }
+
+  #about-head img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #about-head div {
+    padding-left: 0px;
+  }
+
+  .section-p2 {
+    padding: 40px 15px;
+  }
+
+  #about-text .text-center h2 {
+    font-size: 25px;
+    color: #1D1B1B;
   }
 }
