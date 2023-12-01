@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     const productListContainer = document.querySelector('.pro-container');
-
+    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
     const productListContainer2 = document.getElementById('pro-container2');
 
     await fetch(`https://fakestoreapi.com/products`)
@@ -50,10 +50,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         return productElement;
     }
 
-    let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
-
     function addToCart(event, product) {
-        console.log(cartItems)
         const existingCartItem = cartItems.find(item => item.product.id === product.id);
 
         if (existingCartItem) {

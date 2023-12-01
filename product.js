@@ -25,6 +25,11 @@ document.addEventListener('DOMContentLoaded', async () => {
         const productElement = document.createElement('div');
         productElement.classList.add('pro');
         productElement.addEventListener('click', () => redirectToSProduct(product));
+        const addToCartButton = document.createElement('button');
+        addToCartButton.classList.add('add-to-cart-button');
+        addToCartButton.innerHTML = '<i class="fal fa-shopping-cart cart"></i>';
+        addToCartButton.addEventListener('click', (event) => addToCart(event, product));
+
         productElement.innerHTML = `
                     <img class="img" src="${product.image}" alt="">
                     <div class="des">
@@ -37,9 +42,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                             <h4>${product.price} $</h4>
                         </div>
                     </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
                 `;
-
+        productElement.appendChild(addToCartButton);
         return productElement;
     }
 
@@ -50,6 +54,22 @@ document.addEventListener('DOMContentLoaded', async () => {
         });
 
         return starIcons.join('');
+    }
+
+    function addToCart(event, product) {
+        const existingCartItem = cartItems.find(item => item.product.id === product.id);
+
+        if (existingCartItem) {
+            existingCartItem.quantity += 1;
+        } else {
+            cartItems.push({
+                product: product,
+                quantity: 1,
+            });
+        }
+
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+        event.stopPropagation();
     }
 
     function redirectToSProduct(product) {
