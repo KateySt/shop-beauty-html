@@ -1,407 +1,116 @@
 <!DOCTYPE html>
 <html lang="uk">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>capybeauty.shop</title>
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>capybeauty.shop</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <body>
+<body>
 
-        <section id="header">
-            <a href="#" class="logo"><img src="img/logo4.PNG" class="logo" alt="logo" /></a>
-      
-            <div>
-              <ul id="navbar">
-                <li><a href="index.html">Головна</a></li>
-                <li><a class="active" href="shop.html">Магазин</a></li>
-                <li><a href="blog.html">Блог</a></li>
-                <li><a href="about.html">Про нас</a></li>
-                <li><a href="contact.html">Контакти</a></li>
-                <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
-                <a href="#" id="close"><i class="far fa-times"></i></a>
-              </ul>
+<section id="header">
+    <a href="#" class="logo"><img src="img/logo4.PNG" class="logo" alt="logo"/></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html">Головна</a></li>
+            <li><a class="active" href="shop.html">Магазин</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="contact.html">Контакти</a></li>
+            <li id="lg-bag"><a href="cart.html"><i class="far fa-shopping-bag"></i></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+
+</section>
+
+<section id="page-header">
+    <h2>#залишайсявдома</h2>
+    <p>Економте більше з купонами та знижками до 40%!</p>
+</section>
+
+<section id="product1" class="section-p1">
+    <div class="pro-container" id="productContainer">
+    </div>
+</section>
+
+<section id="pagination" class="section-p1"></section>
+
+<section id="newsletter" class="section-p1" class="section-m1">
+    <div class="newstext">
+        <h4>Підпишись на розсилку новин</h4>
+        <p>Отримуй оновлення на E-mail про наші останні товари<br>та
+            <span><strong>спеціальні пропозиції.</strong></span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Електронна пошта">
+        <button class="normal">Підписка</button>
+    </div>
+</section>
+
+<footer class="section-p1">
+    <div class="col">
+        <img src="img/logo4.PNG" alt="" class="logo">
+        <h4>Контакти</h4>
+        <p><strong>Адрес:</strong> майдан Захисників України, 7/8, Харків</p>
+        <p><strong>Телефон:</strong> + 380 (68) 000 00 00 </p>
+        <p><strong>Години роботи:</strong> 10:00 - 18:00. Пн - Сб </p>
+        <div class="follow">
+            <h4>Слідкуйте за нами</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-youtube"></i>
             </div>
-            <div id="mobile">
-                <a href="cart.html"><i class="far fa-shopping-bag"></i></a>
-                <i id="bar" class="fas fa-outdent"></i>
-            </div>
+        </div>
+    </div>
 
-        </section>
+    <div class="col">
+        <h4>Про нас</h4>
+        <a href="#">Про нас</a>
+        <a href="#">Інформація про доставку</a>
+        <a href="#">Політика конфіденційності</a>
+        <a href="#">Умови використання</a>
+        <a href="#">Зв’яжіться з нами</a>
+    </div>
 
-        <section id="page-header">
-            <h2>#залишайсявдома</h2>
-            <p>Економте більше з купонами та знижками до 40%!</p>
-        </section>
+    <div class="col">
+        <h4>Мій профіль</h4>
+        <a href="#">Увійти</a>
+        <a href="#">Переглянути кошик</a>
+        <a href="#">Мій список бажань</a>
+        <a href="#">Відстежити моє замовлення</a>
+        <a href="#">Допомога</a>
+    </div>
 
-        <section id="product1" class="section-p1">
-            <div class="pro-container">
-                <div class="pro" onclick="window.location.href='sproduct.html';">
-                    <img src="img/products/f1.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Bilou</strong></span>
-                        <h5>Гель для душу "Малиновий маршмеллоу"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>150 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f2.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Bilou</strong></span>
-                        <h5>Спрей для волосся</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>280 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f3.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Etude</strong></span>
-                        <h5>Пудра для проблемної шкіри</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>275 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f4.png" alt="">
-                    <div class="des">
-                        <span><strong>La’dor</strong></span>
-                        <h5>Філер для волосся</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>55 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f5.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Uriage</strong></span>
-                        <h5>Нічна маска зволожувальна</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>405 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f6.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Lanbena</strong></span>
-                        <h5>Маска для обличчя від чорних цяток</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>470 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f7.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Bilou</strong></span>
-                        <h5>Пінка для душу "Кавун"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>210 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/f8.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Bilou</strong></span>
-                        <h5>Кондиціонер для волосся</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>275 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n1.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Missha</strong></span>
-                        <h5>Missha M Magic Cushion Cover Lasting SPF50+/PA+++</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>285 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n2.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Missha</strong></span>
-                        <h5>Missha Velvet Finish Cushion SPF50+/PA+++</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>390 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n3.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Coconut"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>150 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n4.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Strawberry"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>55 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n5.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Grape"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>135 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n6.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Watermelon"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>150 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n7.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Passion Fruit"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>150 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-                <div class="pro">
-                    <img src="img/products/n8.jpg" alt="">
-                    <div class="des">
-                        <span><strong>Pure Paw Paw</strong></span>
-                        <h5>Бальзам для губ "Cherry"</h5>
-                        <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="price">
-                            <h4>180 ₴</h4>
-                        </div>
-                    </div>
-                    <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-                </div>
-            </div>
-        </section>
+    <div class="col install">
+        <h4>Встановити додаток</h4>
+        <p>З App Store або Google Play</p>
+        <div class="row">
+            <img src="img/pay/app.jpg" alt="">
+            <img src="img/pay/play.jpg" alt="">
+        </div>
+        <p>Захищені платіжні системи</p>
+        <img src="img/pay/pay.png" alt="" class="pay-logo">
+    </div>
 
-        <section id="pagination" class="section-p1">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
-        </section>
-
-        <section id="newsletter" class="section-p1" class="section-m1">
-            <div class="newstext">
-                <h4>Підпишись на розсилку новин</h4>
-                <p>Отримуй оновлення на E-mail про наші останні товари<br>та <span><strong>спеціальні пропозиції.</strong></span></p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Електронна пошта">
-                <button class="normal">Підписка</button>
-            </div>
-        </section>
-
-        <footer class="section-p1">
-            <div class="col">
-                <img src="img/logo4.PNG" alt="" class="logo">
-                <h4>Контакти</h4>
-                <p><strong>Адрес:</strong> майдан Захисників України, 7/8, Харків</p>
-                <p><strong>Телефон:</strong>  + 380 (68) 000 00 00 </p>
-                <p><strong>Години роботи:</strong> 10:00 - 18:00. Пн - Сб </p>
-                <div class="follow">
-                    <h4>Слідкуйте за нами</h4>
-                    <div class="icon">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-pinterest-p"></i>
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <h4>Про нас</h4>
-                <a href="#">Про нас</a>
-                <a href="#">Інформація про доставку</a>
-                <a href="#">Політика конфіденційності</a>
-                <a href="#">Умови використання</a>
-                <a href="#">Зв’яжіться з нами</a>
-            </div>
-
-            <div class="col">
-                <h4>Мій профіль</h4>
-                <a href="#">Увійти</a>
-                <a href="#">Переглянути кошик</a>
-                <a href="#">Мій список бажань</a>
-                <a href="#">Відстежити моє замовлення</a>
-                <a href="#">Допомога</a>
-            </div>
-
-            <div class="col install">
-                <h4>Встановити додаток</h4>
-                <p>З App Store або Google Play</p>
-                <div class="row">
-                    <img src="img/pay/app.jpg" alt="">
-                    <img src="img/pay/play.jpg" alt="">
-                </div>
-                <p>Захищені платіжні системи</p>
-                <img src="img/pay/pay.png" alt="" class="pay-logo">
-            </div>
-
-            <div class="copyright">
-                <p>© capybeauty.shop 2023</p>
-            </div>
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
+    <div class="copyright">
+        <p>© capybeauty.shop 2023</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="shopPag.js"></script>
+</body>
 
 </html>
